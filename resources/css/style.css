@@ -1,0 +1,113 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ffffff;
+    color: #555;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+header {
+    background-image: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("./images/—Pngtree—delicious\ indian\ food\ on\ wooden_16031499.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text-box h1 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.btn:visited,
+.btn:link {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 300;
+    border-radius: 200px;
+    text-align: center;
+}
+
+.btn-full:visited,
+.btn-full:link {
+    background-color: #e67e22;
+    color: #fff;
+    border: 1px solid #e67e22;
+    margin-right: 25px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #cf6d17;
+}
+
+.btn-ghost:visited,
+.btn-ghost:link {
+    color: #e67e22;
+    border: 1px solid #e67e22;
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    background-color: #cf6d17;
+    color: white;
+}
+
+.row {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+    color: #e67e22;
+}
