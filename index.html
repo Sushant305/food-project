@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./vendors/css/css/col.css">
     <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" href="./vendors/css/css/4cols.css">
+    <link rel="stylesheet" href="./vendors/css/css/2cols.css">
 </head>
 
 <body>
@@ -77,7 +78,7 @@
     </section>
 
     <section class="section-meals">
-        <ul class="meals-showcase">
+        <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo">
                     <img src="./resources/images/1.png" alt="">
@@ -99,7 +100,7 @@
                 </figure>
             </li>
         </ul>
-        <ul class="meals-showcase">
+        <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo">
                     <img src="./resources/images/6.png" alt="">
@@ -125,10 +126,60 @@
 
     <section class="section-steps">
         <div class="row_4">
-            
+            <h2>How it works &mdash; Simple as 1,2,3</h2>
+            <div class="row_4">
+                <div class="col span_1_of_2 steps-box">
+                    <img class="app-screen" src="./resources/images/phone.png" alt="phone-image">
+                </div>
+
+                <div class="col span_1_of_2 steps-box ">
+
+                    <div class="works-step">
+                        <div>1</div>
+                        <p>Choose plan that fits best for your need and sign-up today</p>
+                    </div>
+
+                    <div class="works-step">
+                        <div>2</div>
+                        <p>Pay for the plan and download the app</p>
+                    </div>
+
+                    <div class="works-step">
+                        <div>3</div>
+                        <p>You are done start ordering!!</p>
+                    </div>
+
+                    <a href="#" class="btn-app"><img src="./resources/images/App_store.png" alt=""></a>
+                    <a href="#" class="btn-app"><img src="./resources/images/Play_Store.png" alt=""></a>
+                </div>
+            </div>
         </div>
     </section>
 
+    <section class="section-cities">
+        <div class="row">
+            <h2>We're currently in these cities</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-4">
+                <img src="resources/img/lisbon.jpeg" alt="Lisbon">
+                <h3>Lisbon</h3>
+                <div class="city-feature">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                    1600+ Happy Eaters
+                </div>
+                <div class="city-feature">
+                    <ion-icon name="star-sharp"></ion-icon>
+                    50+ Chefs
+                </div>
+                <div class="city-feature">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    @omnifood_li
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
 </body>
