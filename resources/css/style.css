@@ -353,7 +353,7 @@ blockquote::before{
 
 .plan-box {
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 8px;
     width: 90%;
     margin-left: 5%;
 }
@@ -387,3 +387,5 @@ blockquote::before{
     border: none;
     text-align: center;
 }
+
+/* contect form */
