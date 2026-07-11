@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./vendors/css/css/html5reset.css">
     <link rel="stylesheet" href="./vendors/css/css/col.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" href="./vendors/css/css/4cols.css">
     <link rel="stylesheet" href="./vendors/css/css/2cols.css">
@@ -80,7 +81,7 @@
 
     </section>
 
-    <section class="section-meals">
+    <section class="section-meals" data-aos="fade-in" data-aos-duration="2000">
         <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo">
@@ -133,7 +134,7 @@
             <h2>How it works &mdash; Simple as 1,2,3</h2>
             <div class="row">
                 <div class="col span_1_of_2 steps-box">
-                    <img class="app-screen" src="./resources/images/phone.png" alt="phone-image">
+                    <img data-aos="slide-left" data-aos-duration="1000" class="app-screen" src="./resources/images/phone.png" alt="phone-image">
                 </div>
 
                 <div class="col span_1_of_2 steps-box ">
@@ -160,7 +161,7 @@
         </div>
     </section>
 
-    <section class="section-cities" id="city">
+    <section class="section-cities" id="city" data-aos="fade-in" data-aos-duration="2000">
 
         <div class="row">
             <h2>We're currently in these cities</h2>
@@ -238,7 +239,7 @@
 
     </section>
 
-    <section class="section-testimonials">
+    <section class="section-testimonials" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>Our customer can't live without us</h2>
         </div>
@@ -283,15 +284,15 @@
         </div>
     </section>
 
-    <section class="section-plans" id="plans">
+    <section class="section-plans" id="plans" data-aos="fade-in" data-aos-duration="1000">
         <div class="row">
             <h2>Start eating healthy today</h2>
         </div>
 
         <div class="row">
             <div class="col span_1_of_3">
-                <div class="plan-box">
-                    <div>
+                <div class="plan-box" >
+                    <div data-aos="zoom-in" data-aos-duration="5000">
                         <h3>Premium</h3>
                         <p class="plan-price">$399 <span>/ month</span></p>
                         <p class="plan-price-meal">That's only 13.90$ per meal</p>
@@ -364,7 +365,7 @@
         </div>
     </section>
 
-    <section class="section-form" id="signup">
+    <section class="section-form" id="signup" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>We're happy to hear from you</h2>
         </div>
@@ -467,34 +468,40 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js" integrity="sha256-zKbi8I2J5A9/AtXEXqfqZN23Mt1wpVcyEDYCF/PSYKw=" crossorigin="anonymous"></script><script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"
+        integrity="sha256-zKbi8I2J5A9/AtXEXqfqZN23Mt1wpVcyEDYCF/PSYKw=" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+                    // Store hash
+                    var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
 </body>
 
