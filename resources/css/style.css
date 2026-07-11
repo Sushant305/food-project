@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     background-color: #ffffff;
     color: #555;
     font-family: Lato, sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 header {
@@ -410,4 +412,62 @@ textarea{
 }
 .input[type=checekbox]{
     margin:10px 5px 10px 0;
+}
+
+/* Footer section */
+footer{
+    background-color: #333;
+    font-size: 80%;
+    padding: 50px;
+}
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+}
+
+.footer-nav li a:hover{
+    color: #ddd;
+}
+
+footer p{
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+    margin: 20px;
+}
+.social-links .fb:hover{
+    color: #3b5998;
+}
+.social-links .tw:hover{
+    color: #00aced;
+}
+.social-links .google:hover{
+    color: #dd4b39;
+}
+.social-links .insta:hover{
+    color: #517fa4;
+}
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
 }
